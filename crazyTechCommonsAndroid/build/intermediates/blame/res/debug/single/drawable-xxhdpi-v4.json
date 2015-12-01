@@ -1,0 +1,18 @@
+[
+    {
+        "merged": "D:\\AndroidProjects\\CrazytechUtils\\crazyTechCommonsAndroid\\build\\intermediates\\res\\merged\\debug\\drawable-xxhdpi-v4\\ic_upload_dark.png",
+        "source": "D:\\AndroidProjects\\CrazytechUtils\\crazyTechCommonsAndroid\\src\\main\\res\\drawable-xxhdpi\\ic_upload_dark.png"
+    },
+    {
+        "merged": "D:\\AndroidProjects\\CrazytechUtils\\crazyTechCommonsAndroid\\build\\intermediates\\res\\merged\\debug\\drawable-xxhdpi-v4\\ic_upload.png",
+        "source": "D:\\AndroidProjects\\CrazytechUtils\\crazyTechCommonsAndroid\\src\\main\\res\\drawable-xxhdpi\\ic_upload.png"
+    },
+    {
+        "merged": "D:\\AndroidProjects\\CrazytechUtils\\crazyTechCommonsAndroid\\build\\intermediates\\res\\merged\\debug\\drawable-xxhdpi-v4\\ic_download_dark.png",
+        "source": "D:\\AndroidProjects\\CrazytechUtils\\crazyTechCommonsAndroid\\src\\main\\res\\drawable-xxhdpi\\ic_download_dark.png"
+    },
+    {
+        "merged": "D:\\AndroidProjects\\CrazytechUtils\\crazyTechCommonsAndroid\\build\\intermediates\\res\\merged\\debug\\drawable-xxhdpi-v4\\ic_download.png",
+        "source": "D:\\AndroidProjects\\CrazytechUtils\\crazyTechCommonsAndroid\\src\\main\\res\\drawable-xxhdpi\\ic_download.png"
+    }
+]

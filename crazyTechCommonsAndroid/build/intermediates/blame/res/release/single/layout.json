@@ -1,0 +1,26 @@
+[
+    {
+        "merged": "D:\\AndroidProjects\\CrazytechUtils\\crazyTechCommonsAndroid\\build\\intermediates\\res\\merged\\release\\layout\\drawer_list_item.xml",
+        "source": "D:\\AndroidProjects\\CrazytechUtils\\crazyTechCommonsAndroid\\src\\main\\res\\layout\\drawer_list_item.xml"
+    },
+    {
+        "merged": "D:\\AndroidProjects\\CrazytechUtils\\crazyTechCommonsAndroid\\build\\intermediates\\res\\merged\\release\\layout\\layout_dated_container.xml",
+        "source": "D:\\AndroidProjects\\CrazytechUtils\\crazyTechCommonsAndroid\\src\\main\\res\\layout\\layout_dated_container.xml"
+    },
+    {
+        "merged": "D:\\AndroidProjects\\CrazytechUtils\\crazyTechCommonsAndroid\\build\\intermediates\\res\\merged\\release\\layout\\layout_date_time.xml",
+        "source": "D:\\AndroidProjects\\CrazytechUtils\\crazyTechCommonsAndroid\\src\\main\\res\\layout\\layout_date_time.xml"
+    },
+    {
+        "merged": "D:\\AndroidProjects\\CrazytechUtils\\crazyTechCommonsAndroid\\build\\intermediates\\res\\merged\\release\\layout\\activity_login.xml",
+        "source": "D:\\AndroidProjects\\CrazytechUtils\\crazyTechCommonsAndroid\\src\\main\\res\\layout\\activity_login.xml"
+    },
+    {
+        "merged": "D:\\AndroidProjects\\CrazytechUtils\\crazyTechCommonsAndroid\\build\\intermediates\\res\\merged\\release\\layout\\layout_btn_ok_cancel.xml",
+        "source": "D:\\AndroidProjects\\CrazytechUtils\\crazyTechCommonsAndroid\\src\\main\\res\\layout\\layout_btn_ok_cancel.xml"
+    },
+    {
+        "merged": "D:\\AndroidProjects\\CrazytechUtils\\crazyTechCommonsAndroid\\build\\intermediates\\res\\merged\\release\\layout\\layout_dialog_network.xml",
+        "source": "D:\\AndroidProjects\\CrazytechUtils\\crazyTechCommonsAndroid\\src\\main\\res\\layout\\layout_dialog_network.xml"
+    }
+]
