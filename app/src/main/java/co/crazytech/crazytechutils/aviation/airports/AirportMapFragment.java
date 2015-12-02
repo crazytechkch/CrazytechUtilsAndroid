@@ -8,6 +8,7 @@ import android.util.Log;
 import android.view.LayoutInflater;
 import android.view.View;
 import android.view.ViewGroup;
+import android.widget.TextView;
 
 import com.google.android.gms.maps.CameraUpdateFactory;
 import com.google.android.gms.maps.GoogleMap;
@@ -28,26 +29,51 @@ import java.net.URL;
 import java.nio.charset.Charset;
 import java.nio.charset.StandardCharsets;
 
+import co.crazytech.crazytechutils.R;
 import co.crazytech.crazytechutils.map.MapFragment;
 
 /**
  * Created by eric on 12/1/2015.
  */
 public class AirportMapFragment extends MapFragment {
-   private View rootView;
+   private View rootView,snackView;
     private Airport airport;
+    private Snackbar snackbar;
 
     @Override
     public View onCreateView(LayoutInflater inflater, ViewGroup container, Bundle savedInstanceState) {
         rootView = super.onCreateView(inflater, container, savedInstanceState);
         getMap().setMapType(GoogleMap.MAP_TYPE_SATELLITE);
         new MoveToAirport().execute("kuching");
-        Snackbar snackbar = Snackbar.make(rootView,"",Snackbar.LENGTH_LONG);
-        Snackbar.SnackbarLayout snackLayout = (Snackbar.SnackbarLayout)snackbar.getView();
+        snackbar = Snackbar.make(rootView, "", Snackbar.LENGTH_LONG);
+        Snackbar.SnackbarLayout snackLayout = (Snackbar.SnackbarLayout) snackbar.getView();
+        TextView textView = (TextView) snackLayout.findViewById(android.support.design.R.id.snackbar_text);
+        textView.setVisibility(View.INVISIBLE);
 
+        snackView = inflater.inflate(R.layout.snackbar_airports, null);
+        snackLayout.addView(snackView);
         return rootView;
 
     }
+
+    private void initSnackbar(Airport airport) {
+        TextView textName = (TextView)snackView.findViewById(R.id.text_name);
+        textName.setText(airport.getName());
+        TextView textCity = (TextView)snackView.findViewById(R.id.text_city);
+        textCity.setText(airport.getCity());
+        TextView textCountry = (TextView)snackView.findViewById(R.id.text_country);
+        textCountry.setText(airport.getCountry());
+        TextView textLat = (TextView)snackView.findViewById(R.id.text_lat);
+        textLat.setText(airport.getLat()+"");
+        TextView textLng = (TextView)snackView.findViewById(R.id.text_long);
+        textLng.setText(airport.getLng()+"");
+        TextView textAlt= (TextView)snackView.findViewById(R.id.text_alt);
+        textAlt.setText(airport.getAlt()+"");
+        TextView textTimezone= (TextView)snackView.findViewById(R.id.text_timezone);
+        textTimezone.setText(airport.getTimezone()+"");
+        snackbar.show();
+    }
+
     private class MoveToAirport extends AsyncTask<String,Void,String> {
 
         @Override
@@ -89,6 +115,7 @@ public class AirportMapFragment extends MapFragment {
             LatLng latlng = new LatLng(airport.getLat(), airport.getLng());
             getMap().animateCamera(CameraUpdateFactory.newLatLngZoom(latlng, 15));
             getMap().addMarker(new MarkerOptions().position(latlng));
+            initSnackbar(airport);
             super.onPostExecute(json);
         }
     }
