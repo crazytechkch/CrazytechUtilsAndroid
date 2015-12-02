@@ -1,8 +1,11 @@
 <resources>
-    <string name="app_name">CrazytechUtils</string>
+    <string name="app_name">Crazy Utils</string>
 
     <string name="navigation_drawer_open">Open navigation drawer</string>
     <string name="navigation_drawer_close">Close navigation drawer</string>
 
     <string name="action_settings">Settings</string>
+
+    <string name="airport_finder">Airport Finder</string>
+    <string name="ip_locator">IP Locator</string>
 </resources>

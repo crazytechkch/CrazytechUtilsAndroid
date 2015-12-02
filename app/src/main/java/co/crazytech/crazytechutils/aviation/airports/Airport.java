@@ -5,7 +5,9 @@ import android.util.Log;
 import java.io.IOException;
 import java.io.InputStreamReader;
 import java.io.Reader;
+import java.io.UnsupportedEncodingException;
 import java.net.MalformedURLException;
+import java.net.URLEncoder;
 import java.net.UnknownHostException;
 import java.sql.ResultSet;
 import java.sql.SQLException;
@@ -50,13 +52,24 @@ public class Airport {
 		this.dst = jsonObj.get("dst").getAsString();
 	}
 
-	public static String getUrl(String keyword){
-		return ("http://phpmysql-crazytechco.rhcloud.com/aviation/get_airports.php?where=where "
+	public static String getUrl(){
+		return ("http://phpmysql-crazytechco.rhcloud.com/aviation/get_airports.php"
+				/*+ "?where=where "
 				+ "name like '%"+keyword+"%' "
 				+ "or city like '%"+keyword+"%' "
 				+ "or country like '%"+keyword+"%' "
 				+ "or iata like '%"+keyword+"%' "
-				+ "or icao like '%"+keyword+"%'").replaceAll(" ","%20");
+				+ "or icao like '%"+keyword+"%'"*/).replaceAll(" ","%20");
+	}
+
+	public static String getWhere(String keyword) throws UnsupportedEncodingException {
+		String where = "where=where "
+				+ "name like '%"+keyword+"%' "
+				+ "or city like '%"+keyword+"%' "
+				+ "or country like '%"+keyword+"%' "
+				+ "or iata like '%"+keyword+"%' "
+				+ "or icao like '%"+keyword+"%'";
+		return where.replaceAll("%","%25").replaceAll(" ","%20");
 	}
 	
 	@Override

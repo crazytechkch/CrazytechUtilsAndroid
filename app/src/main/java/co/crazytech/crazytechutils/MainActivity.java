@@ -16,6 +16,7 @@ import android.view.Menu;
 import android.view.MenuItem;
 
 import co.crazytech.crazytechutils.aviation.airports.AirportMapFragment;
+import co.crazytech.crazytechutils.network.geoip.GeoIpMapFragment;
 
 public class MainActivity extends AppCompatActivity
         implements NavigationView.OnNavigationItemSelectedListener {
@@ -84,14 +85,10 @@ public class MainActivity extends AppCompatActivity
         // Handle navigation view item clicks here.
         int id = item.getItemId();
         Fragment fragment = new Fragment();
-        if (id == R.id.nav_camera) {
+        if (id == R.id.nav_airports) {
             fragment = new AirportMapFragment();
-        } else if (id == R.id.nav_gallery) {
-
-        } else if (id == R.id.nav_slideshow) {
-
-        } else if (id == R.id.nav_manage) {
-
+        } else if (id == R.id.nav_geoip) {
+            fragment = new GeoIpMapFragment();
         } else if (id == R.id.nav_share) {
 
         } else if (id == R.id.nav_send) {
