@@ -44,7 +44,7 @@ public class AirportMapFragment extends MapFragment {
         new MoveToAirport().execute("kuching");
         Snackbar snackbar = Snackbar.make(rootView,"",Snackbar.LENGTH_LONG);
         Snackbar.SnackbarLayout snackLayout = (Snackbar.SnackbarLayout)snackbar.getView();
-        
+
         return rootView;
 
     }
