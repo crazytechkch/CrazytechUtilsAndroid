@@ -1,5 +1,7 @@
 package co.crazytech.crazytechutils.aviation.airports;
 
+import android.util.Log;
+
 import java.io.IOException;
 import java.io.InputStreamReader;
 import java.io.Reader;
@@ -32,36 +34,9 @@ public class Airport {
 	private Integer timezone;
 	private String dst;
 	
-	public static String URL = "http://phpmysql-crazytechco.rhcloud.com/aviation/get_airports.php";
-	
-	public Airport(String name,String value) {
-		String json = null;
-		try {
-			json = getJsonString(name,value);
-			JsonObject jsonObj = new Gson().fromJson(json, JsonObject.class);
-			if (jsonObj.get("success").getAsInt()==1) {
-				JsonArray jsonArr = jsonObj.get("results").getAsJsonArray();
-				for (JsonElement jsonElement : jsonArr) {
-					this.name = jsonElement.getAsJsonObject().get("name").getAsString();
-					this.city = jsonElement.getAsJsonObject().get("city").getAsString();
-					this.country = jsonElement.getAsJsonObject().get("country").getAsString();
-					this.iata = jsonElement.getAsJsonObject().get("iata").getAsString();
-					this.icao = jsonElement.getAsJsonObject().get("icao").getAsString();
-					this.lat = jsonElement.getAsJsonObject().get("latitude").getAsDouble();
-					this.lng = jsonElement.getAsJsonObject().get("longitude").getAsDouble();
-					this.alt = jsonElement.getAsJsonObject().get("altitude").getAsInt();
-					this.timezone = jsonElement.getAsJsonObject().get("timezone").getAsInt();
-					this.dst = jsonElement.getAsJsonObject().get("dst").getAsString();
-				}
-			}
-		} catch (Exception e) {
-			e.printStackTrace();
-		}
-		
-		
-	}
-	
-	public Airport(JsonObject jsonObj) throws SQLException {
+	//public static String URL = "http://phpmysql-crazytechco.rhcloud.com/aviation/get_airports.php";
+
+	public Airport(JsonObject jsonObj){
 		super();
 		this.name = jsonObj.get("name").getAsString();
 		this.city = jsonObj.get("city").getAsString();
@@ -74,11 +49,14 @@ public class Airport {
 		this.timezone = jsonObj.get("timezone").getAsInt();
 		this.dst = jsonObj.get("dst").getAsString();
 	}
-	
-	public static String getJsonString(String name, String value) throws JSONException, IOException,Exception{
-		// url - http://phpmysql-crazytechco.rhcloud.com/aviation/get_airports.php?where=where%20city%20like%20'ka%'
-		return new JSONParser().getJsonString(URL+"?where=where%20"+name+"%20like%20'%"+value+"%'",5000);
-		
+
+	public static String getUrl(String keyword){
+		return ("http://phpmysql-crazytechco.rhcloud.com/aviation/get_airports.php?where=where "
+				+ "name like '%"+keyword+"%' "
+				+ "or city like '%"+keyword+"%' "
+				+ "or country like '%"+keyword+"%' "
+				+ "or iata like '%"+keyword+"%' "
+				+ "or icao like '%"+keyword+"%'").replaceAll(" ","%20");
 	}
 	
 	@Override

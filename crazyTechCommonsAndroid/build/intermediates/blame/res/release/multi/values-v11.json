@@ -1,6 +1,6 @@
 [
     {
-        "outputFile": "D:\\AndroidProjects\\CrazytechUtils\\crazyTechCommonsAndroid\\build\\intermediates\\res\\merged\\release\\values-v11\\values-v11.xml",
+        "outputFile": "D:\\AndroidProjects\\CrazytechUtilsAndroid\\crazyTechCommonsAndroid\\build\\intermediates\\res\\merged\\release\\values-v11\\values-v11.xml",
         "map": [
             {
                 "to": {
@@ -12,7 +12,7 @@
                     "endOffset": 187
                 },
                 "from": {
-                    "file": "D:\\AndroidProjects\\CrazytechUtils\\crazyTechCommonsAndroid\\src\\main\\res\\values-v11\\styles.xml",
+                    "file": "D:\\AndroidProjects\\CrazytechUtilsAndroid\\crazyTechCommonsAndroid\\src\\main\\res\\values-v11\\styles.xml",
                     "position": {
                         "startLine": 6,
                         "startColumn": 4,

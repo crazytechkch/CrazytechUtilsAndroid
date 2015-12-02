@@ -101,19 +101,19 @@ public class JSONParser {
 			c.setConnectTimeout(timeout);
 			c.setReadTimeout(timeout);
 			c.connect();
+			BufferedReader br = new BufferedReader(new InputStreamReader(c.getInputStream()));
+			StringBuilder sb = new StringBuilder();
+			String line;
+			while ((line = br.readLine()) != null) {
+				sb.append(line+"\n");
+			}
+			br.close();
+			json = sb.toString();
 			int status = c.getResponseCode();
 
 			switch (status) {
 				case 200:
 				case 201:
-					BufferedReader br = new BufferedReader(new InputStreamReader(c.getInputStream()));
-					StringBuilder sb = new StringBuilder();
-					String line;
-					while ((line = br.readLine()) != null) {
-						sb.append(line+"\n");
-					}
-					br.close();
-					json = sb.toString();
 			}
 
 		} catch (MalformedURLException ex) {

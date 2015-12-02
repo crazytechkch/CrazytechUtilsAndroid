@@ -1,26 +1,26 @@
 [
     {
-        "merged": "D:\\AndroidProjects\\CrazytechUtils\\crazyTechCommonsAndroid\\build\\intermediates\\res\\merged\\androidTest\\debug\\layout\\activity_login.xml",
-        "source": "D:\\AndroidProjects\\CrazytechUtils\\crazyTechCommonsAndroid\\build\\intermediates\\bundles\\debug\\res\\layout\\activity_login.xml"
+        "merged": "D:\\AndroidProjects\\CrazytechUtilsAndroid\\crazyTechCommonsAndroid\\build\\intermediates\\res\\merged\\androidTest\\debug\\layout\\activity_login.xml",
+        "source": "D:\\AndroidProjects\\CrazytechUtilsAndroid\\crazyTechCommonsAndroid\\build\\intermediates\\bundles\\debug\\res\\layout\\activity_login.xml"
     },
     {
-        "merged": "D:\\AndroidProjects\\CrazytechUtils\\crazyTechCommonsAndroid\\build\\intermediates\\res\\merged\\androidTest\\debug\\layout\\layout_dated_container.xml",
-        "source": "D:\\AndroidProjects\\CrazytechUtils\\crazyTechCommonsAndroid\\build\\intermediates\\bundles\\debug\\res\\layout\\layout_dated_container.xml"
+        "merged": "D:\\AndroidProjects\\CrazytechUtilsAndroid\\crazyTechCommonsAndroid\\build\\intermediates\\res\\merged\\androidTest\\debug\\layout\\layout_btn_ok_cancel.xml",
+        "source": "D:\\AndroidProjects\\CrazytechUtilsAndroid\\crazyTechCommonsAndroid\\build\\intermediates\\bundles\\debug\\res\\layout\\layout_btn_ok_cancel.xml"
     },
     {
-        "merged": "D:\\AndroidProjects\\CrazytechUtils\\crazyTechCommonsAndroid\\build\\intermediates\\res\\merged\\androidTest\\debug\\layout\\layout_date_time.xml",
-        "source": "D:\\AndroidProjects\\CrazytechUtils\\crazyTechCommonsAndroid\\build\\intermediates\\bundles\\debug\\res\\layout\\layout_date_time.xml"
+        "merged": "D:\\AndroidProjects\\CrazytechUtilsAndroid\\crazyTechCommonsAndroid\\build\\intermediates\\res\\merged\\androidTest\\debug\\layout\\layout_dated_container.xml",
+        "source": "D:\\AndroidProjects\\CrazytechUtilsAndroid\\crazyTechCommonsAndroid\\build\\intermediates\\bundles\\debug\\res\\layout\\layout_dated_container.xml"
     },
     {
-        "merged": "D:\\AndroidProjects\\CrazytechUtils\\crazyTechCommonsAndroid\\build\\intermediates\\res\\merged\\androidTest\\debug\\layout\\drawer_list_item.xml",
-        "source": "D:\\AndroidProjects\\CrazytechUtils\\crazyTechCommonsAndroid\\build\\intermediates\\bundles\\debug\\res\\layout\\drawer_list_item.xml"
+        "merged": "D:\\AndroidProjects\\CrazytechUtilsAndroid\\crazyTechCommonsAndroid\\build\\intermediates\\res\\merged\\androidTest\\debug\\layout\\layout_dialog_network.xml",
+        "source": "D:\\AndroidProjects\\CrazytechUtilsAndroid\\crazyTechCommonsAndroid\\build\\intermediates\\bundles\\debug\\res\\layout\\layout_dialog_network.xml"
     },
     {
-        "merged": "D:\\AndroidProjects\\CrazytechUtils\\crazyTechCommonsAndroid\\build\\intermediates\\res\\merged\\androidTest\\debug\\layout\\layout_btn_ok_cancel.xml",
-        "source": "D:\\AndroidProjects\\CrazytechUtils\\crazyTechCommonsAndroid\\build\\intermediates\\bundles\\debug\\res\\layout\\layout_btn_ok_cancel.xml"
+        "merged": "D:\\AndroidProjects\\CrazytechUtilsAndroid\\crazyTechCommonsAndroid\\build\\intermediates\\res\\merged\\androidTest\\debug\\layout\\drawer_list_item.xml",
+        "source": "D:\\AndroidProjects\\CrazytechUtilsAndroid\\crazyTechCommonsAndroid\\build\\intermediates\\bundles\\debug\\res\\layout\\drawer_list_item.xml"
     },
     {
-        "merged": "D:\\AndroidProjects\\CrazytechUtils\\crazyTechCommonsAndroid\\build\\intermediates\\res\\merged\\androidTest\\debug\\layout\\layout_dialog_network.xml",
-        "source": "D:\\AndroidProjects\\CrazytechUtils\\crazyTechCommonsAndroid\\build\\intermediates\\bundles\\debug\\res\\layout\\layout_dialog_network.xml"
+        "merged": "D:\\AndroidProjects\\CrazytechUtilsAndroid\\crazyTechCommonsAndroid\\build\\intermediates\\res\\merged\\androidTest\\debug\\layout\\layout_date_time.xml",
+        "source": "D:\\AndroidProjects\\CrazytechUtilsAndroid\\crazyTechCommonsAndroid\\build\\intermediates\\bundles\\debug\\res\\layout\\layout_date_time.xml"
     }
 ]

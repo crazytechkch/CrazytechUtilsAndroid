@@ -1,22 +1,22 @@
 [
     {
-        "merged": "D:\\AndroidProjects\\CrazytechUtils\\crazyTechCommonsAndroid\\build\\intermediates\\res\\merged\\release\\drawable-hdpi-v4\\ic_upload_dark.png",
-        "source": "D:\\AndroidProjects\\CrazytechUtils\\crazyTechCommonsAndroid\\src\\main\\res\\drawable-hdpi\\ic_upload_dark.png"
+        "merged": "D:\\AndroidProjects\\CrazytechUtilsAndroid\\crazyTechCommonsAndroid\\build\\intermediates\\res\\merged\\release\\drawable-hdpi-v4\\ic_upload.png",
+        "source": "D:\\AndroidProjects\\CrazytechUtilsAndroid\\crazyTechCommonsAndroid\\src\\main\\res\\drawable-hdpi\\ic_upload.png"
     },
     {
-        "merged": "D:\\AndroidProjects\\CrazytechUtils\\crazyTechCommonsAndroid\\build\\intermediates\\res\\merged\\release\\drawable-hdpi-v4\\ic_launcher.png",
-        "source": "D:\\AndroidProjects\\CrazytechUtils\\crazyTechCommonsAndroid\\src\\main\\res\\drawable-hdpi\\ic_launcher.png"
+        "merged": "D:\\AndroidProjects\\CrazytechUtilsAndroid\\crazyTechCommonsAndroid\\build\\intermediates\\res\\merged\\release\\drawable-hdpi-v4\\ic_download_dark.png",
+        "source": "D:\\AndroidProjects\\CrazytechUtilsAndroid\\crazyTechCommonsAndroid\\src\\main\\res\\drawable-hdpi\\ic_download_dark.png"
     },
     {
-        "merged": "D:\\AndroidProjects\\CrazytechUtils\\crazyTechCommonsAndroid\\build\\intermediates\\res\\merged\\release\\drawable-hdpi-v4\\ic_download.png",
-        "source": "D:\\AndroidProjects\\CrazytechUtils\\crazyTechCommonsAndroid\\src\\main\\res\\drawable-hdpi\\ic_download.png"
+        "merged": "D:\\AndroidProjects\\CrazytechUtilsAndroid\\crazyTechCommonsAndroid\\build\\intermediates\\res\\merged\\release\\drawable-hdpi-v4\\ic_upload_dark.png",
+        "source": "D:\\AndroidProjects\\CrazytechUtilsAndroid\\crazyTechCommonsAndroid\\src\\main\\res\\drawable-hdpi\\ic_upload_dark.png"
     },
     {
-        "merged": "D:\\AndroidProjects\\CrazytechUtils\\crazyTechCommonsAndroid\\build\\intermediates\\res\\merged\\release\\drawable-hdpi-v4\\ic_download_dark.png",
-        "source": "D:\\AndroidProjects\\CrazytechUtils\\crazyTechCommonsAndroid\\src\\main\\res\\drawable-hdpi\\ic_download_dark.png"
+        "merged": "D:\\AndroidProjects\\CrazytechUtilsAndroid\\crazyTechCommonsAndroid\\build\\intermediates\\res\\merged\\release\\drawable-hdpi-v4\\ic_download.png",
+        "source": "D:\\AndroidProjects\\CrazytechUtilsAndroid\\crazyTechCommonsAndroid\\src\\main\\res\\drawable-hdpi\\ic_download.png"
     },
     {
-        "merged": "D:\\AndroidProjects\\CrazytechUtils\\crazyTechCommonsAndroid\\build\\intermediates\\res\\merged\\release\\drawable-hdpi-v4\\ic_upload.png",
-        "source": "D:\\AndroidProjects\\CrazytechUtils\\crazyTechCommonsAndroid\\src\\main\\res\\drawable-hdpi\\ic_upload.png"
+        "merged": "D:\\AndroidProjects\\CrazytechUtilsAndroid\\crazyTechCommonsAndroid\\build\\intermediates\\res\\merged\\release\\drawable-hdpi-v4\\ic_launcher.png",
+        "source": "D:\\AndroidProjects\\CrazytechUtilsAndroid\\crazyTechCommonsAndroid\\src\\main\\res\\drawable-hdpi\\ic_launcher.png"
     }
 ]
