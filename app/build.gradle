@@ -5,7 +5,7 @@ android {
         debug {
             keyAlias 'androiddebugkey'
             keyPassword 'android'
-            storeFile file('C:/Users/Eric/.android/debug.keystore')
+            storeFile file('D:/android-sdk-windows/debug.keystore')
             storePassword 'android'
         }
         release {
@@ -39,9 +39,16 @@ android {
 dependencies {
     compile fileTree(include: ['*.jar'], dir: 'libs')
     testCompile 'junit:junit:4.12'
+    compile project(':crazyTechCommonsAndroid')
     compile 'com.android.support:appcompat-v7:23.1.1'
     compile 'com.android.support:design:23.1.1'
     compile 'com.google.android.gms:play-services:8.3.0'
-    compile project(':crazyTechCommonsAndroid')
     compile 'com.google.code.gson:gson:2.2.4'
+    compile 'com.google.android.gms:play-services-ads:8.3.0'
+    compile 'com.google.android.gms:play-services-identity:8.3.0'
+    compile 'com.google.android.gms:play-services-gcm:8.3.0'
+    repositories {
+        mavenCentral()
+    }
+    compile 'com.sothree.slidinguppanel:library:3.2.0'
 }

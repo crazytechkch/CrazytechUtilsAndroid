@@ -6,6 +6,7 @@ import android.view.LayoutInflater;
 import android.view.View;
 import android.view.View.OnClickListener;
 import android.view.ViewGroup;
+import android.widget.FrameLayout;
 import android.widget.ImageButton;
 
 import com.google.android.gms.maps.GoogleMap;
@@ -23,18 +24,18 @@ public class MapFragment extends Fragment {
 			Bundle savedInstanceState) {
 		rootV = inflater.inflate(R.layout.layout_map, container,false);
 		initMap();
-		declareViews();
+		declareViews(rootV);
 		return rootV;
 	}
 	
-	private void initMap() {
+	public void initMap() {
 		map = ((SupportMapFragment)getChildFragmentManager().findFragmentById(R.id.map)).getMap();
 		if(map!=null)map.setMyLocationEnabled(true);
 		
 	}
 	
-	private void declareViews() {
-		btnMapType = (ImageButton)rootV.findViewById(R.id.btn_maptype);
+	public void declareViews(View rootView) {
+		btnMapType = (ImageButton)rootView.findViewById(R.id.btn_maptype);
 		btnMapType.setOnClickListener(new OnClickListener() {
 			
 			@Override
@@ -43,7 +44,7 @@ public class MapFragment extends Fragment {
 				else map.setMapType(GoogleMap.MAP_TYPE_NORMAL);;
 			}
 		});
-		btnMapView = (ImageButton)rootV.findViewById(R.id.btn_mapview);
+		btnMapView = (ImageButton)rootView.findViewById(R.id.btn_mapview);
 		btnMapView.setOnClickListener(new OnClickListener() {
 			
 			@Override
@@ -62,6 +63,10 @@ public class MapFragment extends Fragment {
 				}
 			}
 		});
+	}
+
+	public FrameLayout getFrameLayout(){
+		return (FrameLayout)rootV.findViewById(R.id.map_frame);
 	}
 
 	public View getGoneView() {

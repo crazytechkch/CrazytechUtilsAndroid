@@ -68,7 +68,7 @@ public class Airport {
 				+ "or city like '%"+keyword+"%' "
 				+ "or country like '%"+keyword+"%' "
 				+ "or iata like '%"+keyword+"%' "
-				+ "or icao like '%"+keyword+"%'";
+				+ "or icao like '%"+keyword+"%' order by name";
 		return where.replaceAll("%","%25").replaceAll(" ","%20");
 	}
 	
