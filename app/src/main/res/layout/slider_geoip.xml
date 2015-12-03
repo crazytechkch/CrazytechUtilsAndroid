@@ -1,7 +1,9 @@
 <?xml version="1.0" encoding="utf-8"?>
 <LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
-    android:orientation="vertical" android:layout_width="match_parent"
-    android:layout_height="match_parent">
+    android:orientation="vertical"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:background="@color/white_tr">
 
     <LinearLayout
         android:orientation="horizontal"
@@ -12,6 +14,9 @@
             android:layout_width="0dp"
             android:layout_height="match_parent"
             android:layout_weight="0.8"
+            android:singleLine="true"
+            android:imeOptions="actionSearch"
+            android:inputType="text"
             android:id="@+id/editText" />
         <ImageButton
             android:layout_width="0dp"
@@ -36,15 +41,83 @@
                 android:layout_width="0dp"
                 android:layout_height="wrap_content"
                 android:layout_weight=".2"
-                android:text="Name"
+                android:text="IP"
                 android:layout_column="0" />
              <TextView
-                 android:id="@+id/text_name"
+                 android:id="@+id/text_ip"
                  android:layout_width="0dp"
                  android:layout_height="wrap_content"
                  android:layout_weight=".8"
-                 android:text="Name"
-                 android:layout_column="1"/>
+                 android:text="IP"
+                 android:layout_column="1"
+                 android:textStyle="bold"
+                 android:textAppearance="?android:attr/textAppearanceLarge" />
+        </TableRow>
+        <TableRow
+            android:layout_width="match_parent"
+            android:layout_height="match_parent">
+
+            <TextView
+                android:layout_width="0dp"
+                android:layout_height="wrap_content"
+                android:layout_weight=".2"
+                android:text="Country Code"
+                android:layout_column="0" />
+            <TextView
+                android:id="@+id/text_country_code"
+                android:layout_width="0dp"
+                android:layout_height="wrap_content"
+                android:layout_weight=".3"
+                android:text="Country Code"
+                android:layout_column="1"
+                android:textStyle="bold" />
+            <TextView
+                android:layout_width="0dp"
+                android:layout_height="wrap_content"
+                android:layout_weight=".2"
+                android:text="Country"
+                android:layout_column="2" />
+            <TextView
+                android:id="@+id/text_country"
+                android:layout_width="0dp"
+                android:layout_height="wrap_content"
+                android:layout_weight=".3"
+                android:text="Country"
+                android:layout_column="3"
+                android:textStyle="bold" />
+        </TableRow>
+        <TableRow
+            android:layout_width="match_parent"
+            android:layout_height="match_parent">
+
+            <TextView
+                android:layout_width="0dp"
+                android:layout_height="wrap_content"
+                android:layout_weight=".2"
+                android:text="Region Code"
+                android:layout_column="0" />
+            <TextView
+                android:id="@+id/text_region_code"
+                android:layout_width="0dp"
+                android:layout_height="wrap_content"
+                android:layout_weight=".3"
+                android:text="Region Code"
+                android:layout_column="1"
+                android:textStyle="bold" />
+            <TextView
+                android:layout_width="0dp"
+                android:layout_height="wrap_content"
+                android:layout_weight=".2"
+                android:text="Region"
+                android:layout_column="2" />
+            <TextView
+                android:id="@+id/text_region"
+                android:layout_width="0dp"
+                android:layout_height="wrap_content"
+                android:layout_weight=".3"
+                android:text="Region"
+                android:layout_column="3"
+                android:textStyle="bold" />
         </TableRow>
         <TableRow
             android:layout_width="match_parent"
@@ -62,20 +135,55 @@
                 android:layout_height="wrap_content"
                 android:layout_weight=".3"
                 android:text="City"
-                android:layout_column="1" />
+                android:layout_column="1"
+                android:textStyle="bold" />
             <TextView
                 android:layout_width="0dp"
                 android:layout_height="wrap_content"
                 android:layout_weight=".2"
-                android:text="Country"
+                android:text="Zipcode"
                 android:layout_column="2" />
             <TextView
-                android:id="@+id/text_country"
+                android:id="@+id/text_zip"
                 android:layout_width="0dp"
                 android:layout_height="wrap_content"
                 android:layout_weight=".3"
-                android:text="Country"
-                android:layout_column="3" />
+                android:text="Zipcode"
+                android:layout_column="3"
+                android:textStyle="bold" />
+        </TableRow>
+        <TableRow
+            android:layout_width="match_parent"
+            android:layout_height="match_parent">
+            <TextView
+                android:layout_width="0dp"
+                android:layout_height="wrap_content"
+                android:layout_weight=".2"
+                android:text="Metro Code"
+                android:layout_column="0" />
+            <TextView
+                android:id="@+id/text_metro_code"
+                android:layout_width="0dp"
+                android:layout_height="wrap_content"
+                android:layout_weight=".3"
+                android:text="Metro Code"
+                android:layout_column="1"
+                android:textStyle="bold" />
+            <TextView
+                android:layout_width="0dp"
+                android:layout_height="wrap_content"
+                android:layout_weight=".2"
+                android:text="Timezone"
+                android:layout_column="2" />
+            <TextView
+                android:id="@+id/text_timezone"
+                android:layout_width="0dp"
+                android:layout_height="wrap_content"
+                android:layout_weight=".3"
+                android:text="Timezone"
+                android:layout_column="3"
+                android:textStyle="bold" />
+
         </TableRow>
         <TableRow
             android:layout_width="match_parent"
@@ -93,7 +201,8 @@
                 android:layout_height="wrap_content"
                 android:layout_weight=".3"
                 android:text="Latitude"
-                android:layout_column="1" />
+                android:layout_column="1"
+                android:textStyle="bold" />
             <TextView
                 android:layout_width="0dp"
                 android:layout_height="wrap_content"
@@ -101,43 +210,13 @@
                 android:text="Longitude"
                 android:layout_column="2" />
             <TextView
-                android:id="@+id/text_long"
+                android:id="@+id/text_lng"
                 android:layout_width="0dp"
                 android:layout_height="wrap_content"
                 android:layout_weight=".3"
                 android:text="Longitude"
-                android:layout_column="3" />
-        </TableRow>
-        <TableRow
-            android:layout_width="match_parent"
-            android:layout_height="match_parent">
-
-            <TextView
-                android:layout_width="0dp"
-                android:layout_height="wrap_content"
-                android:layout_weight=".2"
-                android:text="Altitude"
-                android:layout_column="0" />
-            <TextView
-                android:id="@+id/text_alt"
-                android:layout_width="0dp"
-                android:layout_height="wrap_content"
-                android:layout_weight=".3"
-                android:text="Altitude"
-                android:layout_column="1" />
-            <TextView
-                android:layout_width="0dp"
-                android:layout_height="wrap_content"
-                android:layout_weight=".2"
-                android:text="Timezone"
-                android:layout_column="2" />
-            <TextView
-                android:id="@+id/text_timezone"
-                android:layout_width="0dp"
-                android:layout_height="wrap_content"
-                android:layout_weight=".3"
-                android:text="Timezone"
-                android:layout_column="3" />
+                android:layout_column="3"
+                android:textStyle="bold" />
         </TableRow>
     </TableLayout>
 
