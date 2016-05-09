@@ -1,7 +1,13 @@
 package co.crazytech.crazytechutils.map;
 
+import android.Manifest;
+import android.app.Activity;
+import android.content.Context;
+import android.content.pm.PackageManager;
 import android.os.Bundle;
+import android.support.v4.app.ActivityCompat;
 import android.support.v4.app.Fragment;
+import android.support.v4.content.ContextCompat;
 import android.view.LayoutInflater;
 import android.view.View;
 import android.view.View.OnClickListener;
@@ -27,11 +33,22 @@ public class MapFragment extends Fragment {
 		declareViews(rootV);
 		return rootV;
 	}
+
 	
 	public void initMap() {
 		map = ((SupportMapFragment)getChildFragmentManager().findFragmentById(R.id.map)).getMap();
+
+		checkPermission(getContext(),getActivity(),111,Manifest.permission.ACCESS_FINE_LOCATION);
+		checkPermission(getContext(),getActivity(),112,Manifest.permission.ACCESS_COARSE_LOCATION);
 		if(map!=null)map.setMyLocationEnabled(true);
 		
+	}
+
+	private void checkPermission(Context context, Activity activity, int reqCode, String... permission){
+		int hasPermission = ContextCompat.checkSelfPermission(context, permission[0]);
+		if (hasPermission != PackageManager.PERMISSION_GRANTED) {
+			ActivityCompat.requestPermissions(activity,permission,reqCode);
+		}
 	}
 	
 	public void declareViews(View rootView) {

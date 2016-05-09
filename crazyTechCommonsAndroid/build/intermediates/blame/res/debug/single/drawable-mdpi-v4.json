@@ -1,19 +1,19 @@
 [
     {
-        "merged": "D:\\AndroidProjects\\CrazytechUtilsAndroid\\crazyTechCommonsAndroid\\build\\intermediates\\res\\merged\\debug\\drawable-mdpi-v4\\ic_upload_dark.png",
-        "source": "D:\\AndroidProjects\\CrazytechUtilsAndroid\\crazyTechCommonsAndroid\\src\\main\\res\\drawable-mdpi\\ic_upload_dark.png"
-    },
-    {
-        "merged": "D:\\AndroidProjects\\CrazytechUtilsAndroid\\crazyTechCommonsAndroid\\build\\intermediates\\res\\merged\\debug\\drawable-mdpi-v4\\ic_launcher.png",
-        "source": "D:\\AndroidProjects\\CrazytechUtilsAndroid\\crazyTechCommonsAndroid\\src\\main\\res\\drawable-mdpi\\ic_launcher.png"
+        "merged": "D:\\AndroidProjects\\CrazytechUtilsAndroid\\crazyTechCommonsAndroid\\build\\intermediates\\res\\merged\\debug\\drawable-mdpi-v4\\ic_upload.png",
+        "source": "D:\\AndroidProjects\\CrazytechUtilsAndroid\\crazyTechCommonsAndroid\\src\\main\\res\\drawable-mdpi\\ic_upload.png"
     },
     {
         "merged": "D:\\AndroidProjects\\CrazytechUtilsAndroid\\crazyTechCommonsAndroid\\build\\intermediates\\res\\merged\\debug\\drawable-mdpi-v4\\ic_download_dark.png",
         "source": "D:\\AndroidProjects\\CrazytechUtilsAndroid\\crazyTechCommonsAndroid\\src\\main\\res\\drawable-mdpi\\ic_download_dark.png"
     },
     {
-        "merged": "D:\\AndroidProjects\\CrazytechUtilsAndroid\\crazyTechCommonsAndroid\\build\\intermediates\\res\\merged\\debug\\drawable-mdpi-v4\\ic_upload.png",
-        "source": "D:\\AndroidProjects\\CrazytechUtilsAndroid\\crazyTechCommonsAndroid\\src\\main\\res\\drawable-mdpi\\ic_upload.png"
+        "merged": "D:\\AndroidProjects\\CrazytechUtilsAndroid\\crazyTechCommonsAndroid\\build\\intermediates\\res\\merged\\debug\\drawable-mdpi-v4\\ic_upload_dark.png",
+        "source": "D:\\AndroidProjects\\CrazytechUtilsAndroid\\crazyTechCommonsAndroid\\src\\main\\res\\drawable-mdpi\\ic_upload_dark.png"
+    },
+    {
+        "merged": "D:\\AndroidProjects\\CrazytechUtilsAndroid\\crazyTechCommonsAndroid\\build\\intermediates\\res\\merged\\debug\\drawable-mdpi-v4\\ic_launcher.png",
+        "source": "D:\\AndroidProjects\\CrazytechUtilsAndroid\\crazyTechCommonsAndroid\\src\\main\\res\\drawable-mdpi\\ic_launcher.png"
     },
     {
         "merged": "D:\\AndroidProjects\\CrazytechUtilsAndroid\\crazyTechCommonsAndroid\\build\\intermediates\\res\\merged\\debug\\drawable-mdpi-v4\\ic_download.png",
